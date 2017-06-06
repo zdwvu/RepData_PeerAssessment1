@@ -61,7 +61,7 @@ ggplot(SummedDataByDay, aes(x = totalsteps)) +
   labs(title = "Total Daily Steps", x = "Steps", y = "Frequency")
 ```
 
-![](PA1_template_files/figure-html/Plot using ggplot-1.png)<!-- -->
+![](PA1_template_files/figure-html/Plot-using-ggplot-1.png)<!-- -->
 
 3. Calculate and report the mean and median of the total number of steps taken per day
 
