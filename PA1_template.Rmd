@@ -1,11 +1,13 @@
-# Reproducible Research: Peer Assessment 1
+---
+title: "Reproducible Research: Peer Assessment 1"
+output: 
+  html_document:
+    keep_md: true
+---
 
-```{r graphics library load}
-library(ggplot2)
-```
 
 ```{r Unzip archive and Read base data into a data frame}
-unzip("activity.zip")
+library(ggplot2)
 baseData <- read.csv("activity.csv")
 ```
 
@@ -33,7 +35,7 @@ head(SummedDataByDay,15)
 ```
 
 2. Make a histogram of the total number of steps taken each day
-```{r Plot using ggplot}
+```{r}
 ggplot(SummedDataByDay, aes(x = totalsteps)) +
   geom_histogram(fill = "steelblue", binwidth=1000) +
   labs(title = "Total Daily Steps", x = "Steps", y = "Frequency")

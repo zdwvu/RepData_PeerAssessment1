@@ -61,7 +61,7 @@ ggplot(SummedDataByDay, aes(x = totalsteps)) +
   labs(title = "Total Daily Steps", x = "Steps", y = "Frequency")
 ```
 
-![](PA1_template_files/figure-html/Plot-using-ggplot-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-1-1.png)<!-- -->
 
 3. Calculate and report the mean and median of the total number of steps taken per day
 
@@ -97,7 +97,7 @@ ggplot(MeanDataByInterval, aes(x = interval, y=steps, group = 1)) +
   geom_line(color="red", size = 1) 
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-1-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
 
 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -197,7 +197,7 @@ ggplot(FullSummedDataByDay, aes(x = totalsteps)) +
   labs(title = "Total Daily Steps", x = "Steps", y = "Frequency")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
 
 ```r
 # Mean on New Data
@@ -255,7 +255,7 @@ ggplot(MeanDataWeekendWeekday, aes(x = interval, y=steps, color=weekend, group =
   labs(title = "Mean of Steps by Interval", x = "interval", y = "steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
 
 There seems to be variation in the beginning of the day during weekdays, likely due to workplace activities. There seems to be an overall slightly larger incidence of steps during the weekends.
 
